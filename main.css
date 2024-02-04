@@ -1,0 +1,675 @@
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #000000;
+  --color-tertiary: #1e1b1b;
+  --color-quaternary: rgb(255, 42, 42);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: var(--color-primary);
+}
+
+html {
+  font-size: 62.5%;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+
+.banner {
+  position: relative;
+  overflow: hidden;
+
+ 
+  max-height: 100vh;
+  margin-top: -9rem;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  padding: 2rem;
+  background-color: var(--color-tertiary);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 3rem;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size:2rem;
+  
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-bottom: transparent 3px solid;
+  border-radius: 5px;
+  
+}
+a:hover {
+  color: var(--color-quaternary);
+  border-bottom: var(--color-quaternary) 3px solid;
+  transition: all 0.7s linear;
+ 
+  
+}
+
+
+video {
+  left: 0;
+  top: 0;
+  width: 100%;
+  
+}
+
+.header-bild {
+  position: absolute;
+  
+  width: 30vw;
+  top: 170px;
+  right: 10vw;
+  border-radius: 10000px;
+  border: 2px solid var(--color-tertiary);
+  height: auto;
+  animation-name:bild ;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+
+}
+
+
+
+
+img:hover{
+  border-color: rgb(105, 27, 27);
+  
+ 
+}
+
+
+
+.text-hi {
+  font-family: "Special Elite", system-ui;
+  font-size: 3.5rem;
+  color: var(--color-primary);
+
+
+
+  /* ANIMATION START*/
+  animation-name: hi;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+}
+
+.text {
+  width: 170px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Special Elite", system-ui;
+  border-right: 2px solid transparent;
+  transform: translate(20px, 190px);
+
+  font-size: 2.5rem;
+
+  animation-name: text, cursor;
+  animation-duration: 2s, 2s;
+  animation-timing-function: steps(18, end), steps(20, end);
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: both;
+  color: transparent;
+  animation-delay: 3s;
+}
+
+.text2 {
+  width: 260px;
+  
+  overflow: hidden;
+  white-space: nowrap;
+
+  font-family: "Special Elite", system-ui;
+
+  border-right: 2px solid transparent;
+  transform: translate(20px, 190px);
+  color: transparent;
+  font-size: 1.5rem;
+  animation-name: text2, cursor2;
+  animation-duration: 4s, 2s;
+  animation-timing-function: steps(30, end), steps(20, end);
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: both;
+  animation-delay: 5s;
+}
+
+
+
+
+@keyframes text {
+  0% {
+    width: 0;
+    color: transparent;
+  }
+  1% {
+    color: var(--color-primary);
+  }
+  100% {
+    color: var(--color-primary);
+  }
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes text2 {
+  0% {
+    width: 0;
+    color: transparent;
+  }
+  1% {
+    color: var(--color-primary);
+  }
+  100% {
+    color: var(--color-primary);
+  }
+}
+@keyframes cursor2 {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes hi {
+  0% {
+    color: transparent;
+    transform: translateX(-50px);
+  }
+  1% {
+    color: var(--color-primary);
+  }
+  100% {
+    color: var(--color-primary);
+    transform: translate(20px, 190px);
+  }
+}
+
+@keyframes bild {
+  0% {
+    transform: translateX(40vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* ANIMATION END */
+
+.about, .skill-text, .project3, .contact1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.contact1{
+  margin-top: 20vh;
+}
+
+.project1{
+ text-align: center;
+ width: 100%;
+}
+
+.about-bild{
+ 
+  width: 250px;
+  height: 400px;
+  
+ 
+  border: 2px solid var(--color-tertiary);
+  border-radius: 5px;
+
+  
+  
+
+}
+
+
+.skills-bild, .project-bild{
+  max-width: 100%;
+  border-radius: 5px ;
+  margin-top: 5vh;
+  
+}
+
+
+.project img{
+  display: grid;
+  place-items: center;
+  
+  transition: all 0.5s linear; 
+  
+   
+  
+  
+}
+.project img:hover{
+  border-color: var(--color-quaternary);
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+  cursor: pointer;
+  box-shadow: 0px 10px 13px -7px #000000, 0px -3px 31px 10px rgba(255, 251, 251, 0.2);
+  
+}
+.about-text {
+  width: 80%;
+ 
+ 
+}
+.text3, .skill-text, .project1{
+  
+  display: grid;
+  grid-template-columns: (1fr);
+  place-items: center;
+  
+}
+h2 {
+  
+  margin-top: 5vh;
+margin-bottom: 2rem;
+  font-size: 4rem;
+  color: red;
+  border-bottom: 2px solid red;
+
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+}
+.skills>div>i{
+  padding-right: 1rem;
+  
+}
+
+
+article {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.7rem;
+  font-weight:600 ;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+
+
+.skills{
+  display: grid;
+  grid-template-columns: repeat(2, 30vw);
+  place-items: start;
+  transform: translate(30px, 50px);
+  row-gap: 6vh;
+  column-gap: 6vw;
+  font-size: 2rem;
+  margin-bottom: 10rem;
+  
+}
+
+.contact {;
+ text-align: center;
+}
+label, input, textarea{
+width: 90%;
+margin-top: 3vh;
+height: 5rem;
+border-radius: 5px;
+padding-left: 10px;
+padding-top: 5px;
+}
+
+.button{
+  padding-left: 0;
+  width: 20%;
+  border: none;
+  color: var(--color-primary);
+  background-color: red;
+  }
+footer{
+  padding:15px;
+  margin-top: 5rem;
+text-align: center;
+  background-color: var(--color-tertiary);
+}
+h3{
+  font-family: 'Courier New', Courier, monospace;
+
+  font-size: 5rem;
+
+}
+  
+.footer{
+  
+  gap: 5rem;
+  padding: 5vh;
+display: flex;
+justify-content: center;}
+
+p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.7rem;
+  font-weight:600 ;
+}
+
+i{
+  font-size: 3rem;
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .text {
+    font-size: 4rem;
+    width: 38vw;
+    transform: translate(40px, 250px);
+  }
+  .text2 {
+    font-size: 2rem;
+    width: 50vw;
+    transform: translate(40px, 250px);
+  }
+  .text3{
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    place-items: center;
+    grid-row-gap: 20px;
+    
+  }
+  
+  nav {
+    justify-content: flex-end;
+    margin-right: 10vw;
+    flex-wrap: nowrap;
+    gap: 3rem;
+  }
+  a{
+    font-size: 2rem;
+  }
+
+  .header-bild {
+    top: 250px;
+    width: 30vw;
+  }
+  .text-hi {
+    
+    font-size: 7rem;
+  }
+
+  .about-bild{
+   
+    width: 300px;
+    height: 450px;
+    
+    
+    
+    
+  
+  }
+
+  .about, .skill-text {
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    
+  }
+  .about-text, .skill-text-1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+  }
+  .skills{
+    
+    display: grid;
+    grid-template-columns: repeat(2,20vw);
+    grid-row-gap: 6vh   ;
+    font-size: 2rem
+  }
+
+ 
+  .skills-bild{
+    max-width: 70%;
+  }
+
+  .project{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,1fr); ;
+    transition: all 0.5s linear;  
+    
+    gap: 2rem;
+    height: auto;
+    
+    
+  }
+
+  
+ 
+  .project2{
+    transform: translate(0, 50px);
+    width: 90%;
+    display: grid; 
+     place-items: center; 
+    grid-template-columns: (1,1fr);
+    transition: all 0.5s linear;  
+    
+    gap: 2rem;
+    height: auto;
+    
+    
+  }
+  .project {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+  }
+
+  .contact{
+    margin-top: 5rem;
+  }
+    label, input, textarea{
+      width: 30%;
+      margin-top: 2rem;
+      height: 5rem;
+      border-radius: 5px;
+      padding-left: 10px;
+      padding-top: 5px;
+      }
+input .button{
+color: red;
+width: 20px;
+border: 2px solid red;
+background-color: black;
+}
+
+label, input, textarea{
+  width: 20%;
+  
+ 
+  }
+ 
+  .button{
+    
+    margin-left: 12vw;
+    margin-top: 10vh;
+    height: 5vh;
+    width: 8vw;
+    
+    color: var(--color-primary);
+    background-color: red;
+    }
+
+
+  @keyframes hi {
+   
+    100% {
+      color: var(--color-primary);
+      transform: translate(40px, 250px);
+    }
+  }
+
+}
+
+@media (min-width: 1025px) {
+ 
+
+  .text {
+    font-size: 5rem;
+    width: 500px;
+    transform: translate(200px, 370px);
+  }
+
+  .text2 {
+    font-size: 2rem;
+    width: 500px;
+    transform: translate(200px, 370px);
+  }
+  .text3, .skill-text, .skill-text1{
+    display: grid;
+    grid-template-columns: repeat(2, 35vw);
+    place-items: center;
+    grid-row-gap: 20px;
+   
+  }
+  
+  nav {
+    justify-content: flex-end;
+    margin-right: 10vw;
+    flex-wrap: nowrap;
+    gap: 3rem;
+  }
+  a{
+    font-size: 2rem;
+  }
+  .header-bild {
+    top: 250px;
+    width: 25vw;
+  }
+
+  .text-hi {
+    font-size: 6rem;
+  }
+  .about-bild{
+   
+    width: 320px;
+    height: 430px;
+    
+    
+    
+    
+  
+  }
+
+  
+  
+
+  
+  .about-text, .skill-text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+
+  }
+  .skills-bild{
+    max-width: 90%;
+    
+  }
+
+  .project{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3,1fr); ;
+    transition: all 0.5s linear;  
+    
+    gap: 2rem;
+    height: auto;
+    
+    
+  }
+
+  
+ 
+  .project2{
+    transform: translate(0, 50px);
+    width: 60%;
+    display: grid; 
+     place-items: center; 
+    grid-template-columns: (1,1fr);
+    transition: all 0.5s linear;  
+    
+    gap: 2rem;
+    height: auto;
+    
+    
+  }
+  
+  
+
+  .skills{
+    
+    display: grid;
+    grid-template-columns: repeat(2,15vw);
+    /* column-gap: -15rem; */
+margin-left: 50%;
+    grid-row-gap: 70px   ;
+    font-size: 2rem
+  }
+.contact{
+  margin-top: 5rem;
+  
+}
+  label, input, textarea{
+    width: 20%;
+    
+   
+    }
+   
+    .button{
+cursor: pointer;
+      margin-left: 12vw;
+      margin-top: 10vh;
+      height: 5vh;
+      width: 8vw;
+      color: var(--color-primary);
+      background-color: red;
+      
+      }
+      @keyframes hi {
+   
+        100% {
+          color: var(--color-primary);
+          transform: translate(200px, 360px);
+        }
+      }
+}
