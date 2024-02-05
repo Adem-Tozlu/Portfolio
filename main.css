@@ -14,6 +14,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
   background-color: black;
   width: 100%;
@@ -49,14 +50,14 @@ nav {
 a {
   color: var(--color-primary);
   text-decoration: none;
-  font-size:2rem;
+  font-size:1.7rem;
   
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   border-bottom: transparent 3px solid;
   border-radius: 5px;
   
 }
-a:hover {
+nav a:hover {
   color: var(--color-quaternary);
   border-bottom: var(--color-quaternary) 3px solid;
   transition: all 0.7s linear;
@@ -92,7 +93,7 @@ video {
 
 
 
-img:hover{
+.banner>img:hover{
   border-color: rgb(105, 27, 27);
   
  
@@ -146,7 +147,7 @@ img:hover{
   border-right: 2px solid transparent;
   transform: translate(20px, 190px);
   color: transparent;
-  font-size: 1.5rem;
+  font-size: 1rem;
   animation-name: text2, cursor2;
   animation-duration: 4s, 2s;
   animation-timing-function: steps(30, end), steps(20, end);
@@ -321,10 +322,10 @@ article {
   display: grid;
   grid-template-columns: repeat(2, 30vw);
   place-items: start;
-  transform: translate(30px, 50px);
+  transform: translate(20px, 50px);
   row-gap: 6vh;
-  column-gap: 6vw;
-  font-size: 2rem;
+  column-gap: 15vw;
+  font-size: 1.6rem;
   margin-bottom: 10rem;
   
 }
@@ -348,7 +349,14 @@ padding-top: 5px;
   color: var(--color-primary);
   background-color: red;
   }
+
+  .button:hover{
+    scale: 1.1;
+    
+  }
+
 footer{
+  
   padding:15px;
   margin-top: 5rem;
 text-align: center;
@@ -368,16 +376,30 @@ h3{
 display: flex;
 justify-content: center;}
 
+
+
 p{
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight:600 ;
 }
 
 i{
-  font-size: 3rem;
+  font-size: 2rem;
 
 }
+.skills div{
+  border-bottom: black 3px solid;
+  border-radius: 9px;
+  transition: all 0.3s linear;  
+  padding-bottom: 5px;
+  
+}
+.skills div:hover{
+ border-color: red;
+ scale: 1.1;
+ }
+
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -398,6 +420,11 @@ i{
     grid-row-gap: 20px;
     
   }
+  .about-schrift
+    {
+      margin-right: 18%;
+    }
+  
   
   nav {
     justify-content: flex-end;
@@ -446,7 +473,7 @@ i{
   .skills{
     
     display: grid;
-    grid-template-columns: repeat(2,20vw);
+    grid-template-columns: repeat(2,18vw);
     grid-row-gap: 6vh   ;
     font-size: 2rem
   }
@@ -509,11 +536,7 @@ border: 2px solid red;
 background-color: black;
 }
 
-label, input, textarea{
-  width: 20%;
-  
- 
-  }
+
  
   .button{
     
@@ -526,6 +549,7 @@ label, input, textarea{
     background-color: red;
     }
 
+    
 
   @keyframes hi {
    
@@ -605,6 +629,20 @@ label, input, textarea{
     
   }
 
+  .skills>div{
+    border-bottom: black 3px solid;
+    border-radius: 9px;
+    transition: all 0.3s linear;  
+    padding-bottom: 5px;
+    
+  }
+  .skills>div:hover{
+   border-color: red;
+   
+   }
+
+ 
+
   .project{
     width: 100%;
     display: grid;
@@ -633,17 +671,23 @@ label, input, textarea{
     
     
   }
+
+  .about-schrift
+    {
+      margin-left: 30%;
+    }
   
   
 
   .skills{
     
     display: grid;
-    grid-template-columns: repeat(2,15vw);
-    /* column-gap: -15rem; */
+    grid-template-columns: repeat(2,12vw);
+    
 margin-left: 50%;
-    grid-row-gap: 70px   ;
-    font-size: 2rem
+grid-column-gap:8vw;
+    grid-row-gap: 10vh   ;
+    font-size: 1.9rem
   }
 .contact{
   margin-top: 5rem;
@@ -665,6 +709,8 @@ cursor: pointer;
       background-color: red;
       
       }
+
+
       @keyframes hi {
    
         100% {
