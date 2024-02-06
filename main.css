@@ -34,7 +34,6 @@ html {
   left: 0;
   width: 100%;
   z-index: 1;
-
   padding: 2rem;
   background-color: var(--color-tertiary);
 }
@@ -83,7 +82,7 @@ video {
 }
 
 .header-bild:hover {
-  border-color:var(--color-quaternary);
+  border-color: var(--color-quaternary);
 }
 
 .text-hi {
@@ -101,19 +100,15 @@ video {
 
 .text {
   width: 170px;
-
   overflow: hidden;
   white-space: nowrap;
   font-family: "Special Elite", system-ui;
-  border-right: 2px solid transparent;
   transform: translate(20px, 170px);
-
   font-size: 2.5rem;
-
-  animation-name: text, cursor;
-  animation-duration: 2s, 2s;
-  animation-timing-function: steps(18, end), steps(20, end);
-  animation-iteration-count: 1, infinite;
+  animation-name: text;
+  animation-duration: 2s;
+  animation-timing-function: steps(18, end);
+  animation-iteration-count: 1;
   animation-fill-mode: both;
   color: transparent;
   animation-delay: 3s;
@@ -121,20 +116,16 @@ video {
 
 .text2 {
   width: 260px;
-
   overflow: hidden;
   white-space: nowrap;
-
   font-family: "Special Elite", system-ui;
-
-  border-right: 2px solid transparent;
   transform: translate(20px, 170px);
   color: transparent;
   font-size: 1rem;
-  animation-name: text2, cursor2;
-  animation-duration: 4s, 2s;
-  animation-timing-function: steps(30, end), steps(20, end);
-  animation-iteration-count: 1, infinite;
+  animation-name: text2;
+  animation-duration: 4s;
+  animation-timing-function: steps(33, end);
+  animation-iteration-count: 1;
   animation-fill-mode: both;
   animation-delay: 5s;
 }
@@ -151,11 +142,6 @@ video {
     color: var(--color-primary);
   }
 }
-@keyframes cursor {
-  50% {
-    border-color: transparent;
-  }
-}
 
 @keyframes text2 {
   0% {
@@ -167,11 +153,6 @@ video {
   }
   100% {
     color: var(--color-primary);
-  }
-}
-@keyframes cursor2 {
-  50% {
-    border-color: transparent;
   }
 }
 
@@ -283,7 +264,7 @@ article {
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(2, 30vw);
+  grid-template-columns: repeat(2, 34vw);
   place-items: start;
   transform: translate(20px, 50px);
   row-gap: 6vh;
@@ -304,15 +285,16 @@ textarea {
   border-radius: 5px;
   padding-left: 10px;
   padding-top: 5px;
+  color: var(--color-secondary);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .button {
   padding-left: 0;
   width: 20%;
   border: none;
-  /* font-size: 1.7rem; */
   color: var(--color-primary);
-  background-color:var(--color-quaternary);
+  background-color: var(--color-quaternary);
 }
 
 .button:hover {
@@ -427,6 +409,9 @@ i {
   .skills-bild {
     max-width: 70%;
   }
+  .skills > div > i {
+    font-size: 3rem;
+  }
 
   .project {
     width: 100%;
@@ -434,7 +419,6 @@ i {
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
     transition: all 0.5s linear;
-
     gap: 2rem;
     height: auto;
   }
@@ -446,7 +430,6 @@ i {
     place-items: center;
     grid-template-columns: (1, 1fr);
     transition: all 0.5s linear;
-
     gap: 2rem;
     height: auto;
   }
@@ -482,9 +465,7 @@ i {
     margin-top: 10vh;
     height: 5vh;
     width: 8vw;
-
     color: var(--color-primary);
-    
   }
 
   @keyframes hi {
@@ -560,6 +541,9 @@ i {
   .skills > div:hover {
     border-color: red;
   }
+  .skills > div > i {
+    font-size: 4rem;
+  }
 
   .project {
     width: 100%;
@@ -567,7 +551,6 @@ i {
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
     transition: all 0.5s linear;
-
     gap: 2rem;
     height: auto;
   }
@@ -579,7 +562,6 @@ i {
     place-items: center;
     grid-template-columns: (1, 1fr);
     transition: all 0.5s linear;
-
     gap: 2rem;
     height: auto;
   }
@@ -590,8 +572,7 @@ i {
 
   .skills {
     display: grid;
-    grid-template-columns: repeat(2, 12vw);
-
+    grid-template-columns: repeat(2, 14vw);
     margin-left: 50%;
     grid-column-gap: 8vw;
     grid-row-gap: 10vh;
@@ -614,7 +595,6 @@ i {
     width: 8vw;
     font-size: 1.7rem;
     color: var(--color-primary);
-    
   }
 
   @keyframes hi {
