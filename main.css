@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: var(--color-primary);
 }
 
@@ -252,6 +252,7 @@ h2 {
 }
 .skills > div > i {
   padding-right: 1rem;
+  font-size: 4vw;
 }
 
 article {
@@ -267,9 +268,10 @@ article {
   grid-template-columns: repeat(2, 34vw);
   place-items: start;
   transform: translate(20px, 50px);
+
   row-gap: 6vh;
   column-gap: 15vw;
-  font-size: 1.6rem;
+  font-size: 4vw;
   margin-bottom: 10rem;
 }
 
@@ -290,8 +292,11 @@ textarea {
 }
 
 .button {
+  text-align: center;
+  padding-top: 0;
   padding-left: 0;
   width: 20%;
+  height: 3rem;
   border: none;
   color: var(--color-primary);
   background-color: var(--color-quaternary);
@@ -334,6 +339,7 @@ i {
   border-radius: 9px;
   transition: all 0.3s linear;
   padding-bottom: 5px;
+  font
 }
 .skills div:hover {
   border-color: red;
@@ -403,7 +409,8 @@ i {
     display: grid;
     grid-template-columns: repeat(2, 18vw);
     grid-row-gap: 6vh;
-    font-size: 2rem;
+    font-size: 1.5rem;
+   
   }
 
   .skills-bild {
@@ -411,6 +418,7 @@ i {
   }
   .skills > div > i {
     font-size: 3rem;
+    
   }
 
   .project {
@@ -453,17 +461,12 @@ i {
     padding-left: 10px;
     padding-top: 5px;
   }
-  input .button {
-    color: red;
-    width: 20px;
-    border: 2px solid red;
-    background-color: black;
-  }
+  
 
   .button {
     margin-left: 12vw;
     margin-top: 10vh;
-    height: 5vh;
+    height: 5rem;
     width: 8vw;
     color: var(--color-primary);
   }
@@ -541,9 +544,7 @@ i {
   .skills > div:hover {
     border-color: red;
   }
-  .skills > div > i {
-    font-size: 4rem;
-  }
+ 
 
   .project {
     width: 100%;
@@ -576,7 +577,10 @@ i {
     margin-left: 50%;
     grid-column-gap: 8vw;
     grid-row-gap: 10vh;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
+  }
+  .skills > div > i {
+    font-size: 2vw;
   }
   .contact {
     margin-top: 5rem;
@@ -591,7 +595,7 @@ i {
     cursor: pointer;
     margin-left: 12vw;
     margin-top: 10vh;
-    height: 5vh;
+    height: 5rem;
     width: 8vw;
     font-size: 1.7rem;
     color: var(--color-primary);
