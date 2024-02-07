@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: var(--color-primary);
 }
 
@@ -37,7 +37,6 @@ html {
   padding: 2rem;
   background-color: var(--color-tertiary);
 }
-
 
 nav {
   display: flex;
@@ -304,7 +303,8 @@ textarea {
 }
 
 .button:hover {
-  scale: 1.1;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 footer {
@@ -340,26 +340,25 @@ i {
   border-radius: 9px;
   transition: all 0.3s linear;
   padding-bottom: 5px;
-  font
 }
 .skills div:hover {
   border-color: red;
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
-.fa-github, .fa-whatsapp{
-  font-size:2.5rem;
+.fa-github,
+.fa-whatsapp {
+  font-size: 2.5rem;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  nav::before{
-    content:"\f121";
-   font-size: 2rem;
-    font-family:"Font Awesome 5 Free";
+  nav::before {
+    content: "\f121";
+    font-size: 2rem;
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     width: 100%;
     height: 100%;
-   
   }
   .text {
     font-size: 4rem;
@@ -424,7 +423,6 @@ i {
     grid-template-columns: repeat(2, 18vw);
     grid-row-gap: 6vh;
     font-size: 1.5rem;
-   
   }
 
   .skills-bild {
@@ -432,7 +430,6 @@ i {
   }
   .skills > div > i {
     font-size: 3rem;
-    
   }
 
   .project {
@@ -475,7 +472,6 @@ i {
     padding-left: 10px;
     padding-top: 5px;
   }
-  
 
   .button {
     margin-left: 12vw;
@@ -494,15 +490,13 @@ i {
 }
 
 @media (min-width: 1025px) {
-
-  nav::before{
-    content:"\f121";
-   font-size: 3rem;
-    font-family:"Font Awesome 5 Free";
+  nav::before {
+    content: "\f121";
+    font-size: 3rem;
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     width: 100%;
     height: 100%;
-   
   }
   .text {
     font-size: 5rem;
@@ -565,10 +559,7 @@ i {
     transition: all 0.3s linear;
     padding-bottom: 5px;
   }
-  .skills > div:hover {
-    border-color: red;
-  }
- 
+  
 
   .project {
     width: 100%;
@@ -630,5 +621,5 @@ i {
       color: var(--color-primary);
       transform: translate(200px, 360px);
     }
- 
-}}
+  }
+}
