@@ -38,6 +38,7 @@ html {
   background-color: var(--color-tertiary);
 }
 
+
 nav {
   display: flex;
   justify-content: center;
@@ -346,7 +347,20 @@ i {
   scale: 1.1;
 }
 
+.fa-github, .fa-whatsapp{
+  font-size:2.5rem;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
+  nav::before{
+    content:"\f121";
+   font-size: 2rem;
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+   
+  }
   .text {
     font-size: 4rem;
     width: 38vw;
@@ -480,6 +494,16 @@ i {
 }
 
 @media (min-width: 1025px) {
+
+  nav::before{
+    content:"\f121";
+   font-size: 3rem;
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+   
+  }
   .text {
     font-size: 5rem;
     width: 500px;
@@ -606,5 +630,5 @@ i {
       color: var(--color-primary);
       transform: translate(200px, 360px);
     }
-  }
-}
+ 
+}}
